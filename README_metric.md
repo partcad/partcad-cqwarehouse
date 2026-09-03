@@ -1,4 +1,4 @@
-# /pub/std/metric/cqwarehouse
+# //pub/std/metric/cqwarehouse
 
 Metric parts by cq-warehouse
 

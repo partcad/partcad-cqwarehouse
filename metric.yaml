@@ -5,7 +5,7 @@ pythonVersion: 3.10
 cover:
   part: fastener/buttonhead-iso7380-1
 docs:
-  name: /pub/std/metric/cqwarehouse
+  name: //pub/std/metric/cqwarehouse
 
 {% from 'macros.j2' import list_sizes, screw_params %}
 
@@ -53,7 +53,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [3,4,5,6,8,10,12,16]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/buttonheadwithcollar-iso7380-2:
     type: cadquery
     aliases:
@@ -61,7 +61,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [3,4,5,6,8,10,12,16]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/cheesehead-iso1207:
     type: cadquery
     aliases:
@@ -69,7 +69,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [1.6,2,2.5,3,3.5,4,5,6,8,10]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/cheesehead-iso7048:
     type: cadquery
     aliases:
@@ -77,7 +77,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [2.5,3,3.5,4,5,6,8]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/cheesehead-iso14580:
     type: cadquery
     aliases:
@@ -85,7 +85,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [2,2.5,3,3.5,4,5,6,8,10]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/countersunk-iso7046:
     type: cadquery
     aliases:
@@ -93,7 +93,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [1.6,2,2.5,3,3.5,4,5,6,8,10]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/countersunk-iso14582:
     type: cadquery
     aliases:
@@ -101,7 +101,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [3,4,5,6,8,10]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/countersunk-iso2009:
     type: cadquery
     aliases:
@@ -109,7 +109,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [1,1.2,1.4,1.6,2,2.5,3,3.5,4,5,6,8,10,12,14,16,18,20]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/countersunk-iso10642:
     type: cadquery
     aliases:
@@ -117,7 +117,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [3,4,5,6,8,10,12,14,16,18,20,22,24]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/countersunk-iso14581:
     type: cadquery
     aliases:
@@ -125,7 +125,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [2,2.5,3,3.5,4,5,6,8,10]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/hexhead-din931:
     type: cadquery
     aliases:
@@ -133,7 +133,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [3,4,5,6,8,10,12,14,16,18,20,22,24,27,30,36,42,48,56,64]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/hexhead-iso4014:
     type: cadquery
     aliases:
@@ -144,7 +144,7 @@ parts:
         type: int
         default: 6
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/hexhead-iso4017:
     type: cadquery
     aliases:
@@ -155,7 +155,7 @@ parts:
         type: int
         default: 6
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/hexheadwithflange-din1662:
     type: cadquery
     aliases:
@@ -166,7 +166,7 @@ parts:
         type: int
         default: 6
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/hexheadwithflange-din1665:
     type: cadquery
     aliases:
@@ -177,7 +177,7 @@ parts:
         type: int
         default: 6
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/panhead-iso14583:
     type: cadquery
     aliases:
@@ -185,7 +185,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [2,2.5,3,3.5,4,5,6,8,10]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/panhead-iso1580:
     type: cadquery
     aliases:
@@ -193,7 +193,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [1.6,2,2.5,3,3.5,4,5,6,8,10]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/panheadwithcollar-din967:
     type: cadquery
     aliases:
@@ -201,7 +201,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [3,3.5,4,5,6,8]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/raisedcheesehead-iso7045:
     type: cadquery
     aliases:
@@ -209,7 +209,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [1.6,2,2.5,3,3.5,4,5,6,8,10]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/raisedcountersunkovalhead-iso14584:
     type: cadquery
     aliases:
@@ -217,7 +217,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [2,2.5,3,3.5,4,5,6,8,10]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/raisedcountersunkovalhead-iso7047:
     type: cadquery
     aliases:
@@ -225,7 +225,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [1.6,2,2.5,3,3.5,4,5,6,8,10]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/raisedcountersunkovalhead-iso2010:
     type: cadquery
     aliases:
@@ -233,7 +233,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [1,1.2,1.4,1.6,2,2.5,3,3.5,4,5,6,8,10]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   # The following is desabled due to https://github.com/gumyr/cq_warehouse/issues/87
   # fastener/set-iso4026:
   #   type: cadquery
@@ -242,7 +242,7 @@ parts:
   #   parameters:
   #     { { screw_params(metric_sizes, [1.4,1.6,2,2.5,3,3.5,4,5,6,8,10,12,14,16,20,24,30,36,42,48,56,64]) } }
   #   implements:
-  #     "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+  #     "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
   fastener/socketheadcap-iso4762:
     type: cadquery
     aliases:
@@ -250,7 +250,7 @@ parts:
     parameters:
       {{ screw_params(metric_sizes, [1.6,2,2.5,3,3.5,4,5,6,8,10,12,14,16,18,20,22,24]) }}
     implements:
-      "/pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
 
 render:
   svg:
