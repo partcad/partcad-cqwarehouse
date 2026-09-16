@@ -16,7 +16,12 @@
         type: bool
         default: False
       length:
-        type: int
+        # Not an integer: a screw 3.5mm long is a catalogue item, as are 4.5,
+        # 6.5 and 12.5, and the sizes beside it are already fractional - M2.5,
+        # M3.5. cq_warehouse takes a float here, and PartCAD checks the
+        # declared type as of 0.8.85, so an integer here refuses the length
+        # somebody actually has.
+        type: float
         default: 10
       hand:
         type: string
@@ -33,7 +38,12 @@
         type: bool
         default: False
       length:
-        type: int
+        # Not an integer: a screw 3.5mm long is a catalogue item, as are 4.5,
+        # 6.5 and 12.5, and the sizes beside it are already fractional - M2.5,
+        # M3.5. cq_warehouse takes a float here, and PartCAD checks the
+        # declared type as of 0.8.85, so an integer here refuses the length
+        # somebody actually has.
+        type: float
         default: 10
       hand:
         type: string
