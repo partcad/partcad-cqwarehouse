@@ -1,3 +1,4 @@
+partcad: ">=0.8.0"
 desc: |
   A collection of PartCAD packages for cq_warehouse:
   a CadQuery parametric part collection
@@ -12,7 +13,7 @@ docs:
     - [//pub/std/metric/cqwarehouse](README_metric.md)
     - [//pub/std/imperial/cqwarehouse](README_imperial.md)
 
-import:
+dependencies:
   cq-warehouse-metric:
     type: local
     path: metric.yaml

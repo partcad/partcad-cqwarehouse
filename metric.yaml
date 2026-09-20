@@ -1,7 +1,7 @@
 desc: Metric parts by cq-warehouse
 url: https://cq-warehouse.readthedocs.io/
 partcad: ">=0.3.82"
-pythonVersion: 3.10
+pythonVersion: "3.10"
 cover:
   part: fastener/buttonhead-iso7380-1
 docs:
