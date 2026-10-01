@@ -165,4 +165,94 @@ Metric parts by cq-warehouse
 <td valign=top>Aliases:<br/><ul><li>fastener/iso4762</li></ul></td>
 </tr></table>
 
+### fastener/hexnut-iso4032
+<table><tr>
+<td valign=top><img src="./fastener/hexnut-iso4032.svg" width="200" height="200"></td>
+<td valign=top>Parameters:<br/><ul><li>size: <ul><li><b>M1.6-0.35</b></li><li>M2-0.4</li><li>M2.5-0.45</li><li>M3-0.5</li><li>M3.5-0.6</li><li>M4-0.7</li><li>M5-0.8</li><li>M6-1</li><li>M8-1.25</li><li>M10-1.5</li><li>M12-1.75</li><li>M14-2</li><li>M16-2</li><li>M18-2.5</li><li>M20-2.5</li><li>M22-2.5</li><li>M24-3</li><li>M27-3</li><li>M30-3.5</li><li>M33-3.5</li><li>M36-4</li><li>M39-4</li><li>M42-4.5</li><li>M45-4.5</li><li>M48-5</li><li>M52-5</li><li>M56-5.5</li><li>M60-5.5</li><li>M64-6</li></ul></li><li>simple: False</li><li>hand: <ul><li>left</li><li><b>right</b></li></ul></li></ul></td>
+<td valign=top>Aliases:<br/><ul><li>fastener/iso4032</li></ul></td>
+</tr></table>
+
+### fastener/hexnut-iso4033
+<table><tr>
+<td valign=top><img src="./fastener/hexnut-iso4033.svg" width="200" height="200"></td>
+<td valign=top>Parameters:<br/><ul><li>size: <ul><li><b>M5-0.8</b></li><li>M6-1</li><li>M8-1.25</li><li>M10-1.5</li><li>M12-1.75</li><li>M14-2</li><li>M16-2</li><li>M20-2.5</li><li>M24-3</li><li>M30-3.5</li><li>M36-4</li></ul></li><li>simple: False</li><li>hand: <ul><li>left</li><li><b>right</b></li></ul></li></ul></td>
+<td valign=top>Aliases:<br/><ul><li>fastener/iso4033</li></ul></td>
+</tr></table>
+
+### fastener/hexnut-iso4035
+<table><tr>
+<td valign=top><img src="./fastener/hexnut-iso4035.svg" width="200" height="200"></td>
+<td valign=top>Parameters:<br/><ul><li>size: <ul><li><b>M1.6-0.35</b></li><li>M2-0.4</li><li>M2.5-0.45</li><li>M3.5-0.6</li><li>M4-0.7</li><li>M5-0.8</li><li>M6-1</li><li>M8-1.25</li><li>M10-1.5</li><li>M12-1.75</li><li>M14-2</li><li>M16-2</li><li>M18-2.5</li><li>M20-2.5</li><li>M22-2.5</li><li>M24-3</li><li>M27-3</li><li>M30-3.5</li><li>M33-3.5</li><li>M36-4</li><li>M39-4</li><li>M42-4.5</li><li>M45-4.5</li><li>M48-5</li><li>M52-5</li></ul></li><li>simple: False</li><li>hand: <ul><li>left</li><li><b>right</b></li></ul></li></ul></td>
+<td valign=top>Aliases:<br/><ul><li>fastener/iso4035</li></ul></td>
+</tr></table>
+
+### fastener/hexnutunchamfered-iso4036
+<table><tr>
+<td valign=top><img src="./fastener/hexnutunchamfered-iso4036.svg" width="200" height="200"></td>
+<td valign=top>Parameters:<br/><ul><li>size: <ul><li><b>M1.6-0.35</b></li><li>M2-0.4</li><li>M2.5-0.45</li><li>M3-0.5</li><li>M3.5-0.6</li><li>M4-0.7</li><li>M5-0.8</li><li>M6-1</li><li>M8-1.25</li><li>M10-1.5</li></ul></li><li>simple: False</li><li>hand: <ul><li>left</li><li><b>right</b></li></ul></li></ul></td>
+<td valign=top>Aliases:<br/><ul><li>fastener/iso4036</li></ul></td>
+</tr></table>
+
+### fastener/hexnutwithflange-din1665
+<table><tr>
+<td valign=top><img src="./fastener/hexnutwithflange-din1665.svg" width="200" height="200"></td>
+<td valign=top>Parameters:<br/><ul><li>size: <ul><li><b>M5-0.8</b></li><li>M6-1</li><li>M8-1.25</li><li>M10-1.5</li><li>M12-1.75</li><li>M14-2</li><li>M16-2</li><li>M20-2.5</li></ul></li><li>simple: False</li><li>hand: <ul><li>left</li><li><b>right</b></li></ul></li></ul></td>
+</tr></table>
+
+### fastener/domedcapnut-din1587
+<table><tr>
+<td valign=top><img src="./fastener/domedcapnut-din1587.svg" width="200" height="200"></td>
+<td valign=top>Parameters:<br/><ul><li>size: <ul><li><b>M4-0.7</b></li><li>M5-0.8</li><li>M6-1</li><li>M8-1.25</li><li>M12-1.75</li><li>M14-2</li><li>M16-2</li><li>M18-2.5</li><li>M20-2.5</li><li>M22-2.5</li><li>M24-3</li></ul></li><li>simple: False</li><li>hand: <ul><li>left</li><li><b>right</b></li></ul></li></ul></td>
+<td valign=top>Aliases:<br/><ul><li>fastener/din1587</li></ul></td>
+</tr></table>
+
+### fastener/squarenut-din557
+<table><tr>
+<td valign=top><img src="./fastener/squarenut-din557.svg" width="200" height="200"></td>
+<td valign=top>Parameters:<br/><ul><li>size: <ul><li><b>M5-0.8</b></li><li>M6-1</li><li>M8-1.25</li><li>M10-1.5</li><li>M12-1.75</li><li>M16-2</li></ul></li><li>simple: False</li><li>hand: <ul><li>left</li><li><b>right</b></li></ul></li></ul></td>
+<td valign=top>Aliases:<br/><ul><li>fastener/din557</li></ul></td>
+</tr></table>
+
+### fastener/plainwasher-iso7089
+<table><tr>
+<td valign=top><img src="./fastener/plainwasher-iso7089.svg" width="200" height="200"></td>
+<td valign=top>Parameters:<br/><ul><li>size: <ul><li><b>M1.6</b></li><li>M2</li><li>M2.5</li><li>M3</li><li>M3.5</li><li>M4</li><li>M5</li><li>M6</li><li>M8</li><li>M10</li><li>M12</li><li>M14</li><li>M16</li><li>M18</li><li>M20</li><li>M22</li><li>M24</li><li>M27</li><li>M30</li><li>M33</li><li>M36</li></ul></li></ul></td>
+<td valign=top>Aliases:<br/><ul><li>fastener/iso7089</li></ul></td>
+</tr></table>
+
+### fastener/chamferedwasher-iso7090
+<table><tr>
+<td valign=top><img src="./fastener/chamferedwasher-iso7090.svg" width="200" height="200"></td>
+<td valign=top>Parameters:<br/><ul><li>size: <ul><li><b>M5</b></li><li>M6</li><li>M8</li><li>M10</li><li>M12</li><li>M14</li><li>M16</li><li>M18</li><li>M20</li><li>M22</li><li>M24</li><li>M27</li><li>M30</li><li>M33</li><li>M36</li><li>M39</li><li>M42</li><li>M45</li><li>M48</li><li>M52</li><li>M56</li><li>M60</li><li>M64</li></ul></li></ul></td>
+<td valign=top>Aliases:<br/><ul><li>fastener/iso7090</li></ul></td>
+</tr></table>
+
+### fastener/plainwasher-iso7091
+<table><tr>
+<td valign=top><img src="./fastener/plainwasher-iso7091.svg" width="200" height="200"></td>
+<td valign=top>Parameters:<br/><ul><li>size: <ul><li><b>M1.6</b></li><li>M2</li><li>M2.5</li><li>M3</li><li>M4</li><li>M5</li><li>M6</li><li>M8</li><li>M10</li><li>M12</li><li>M16</li><li>M20</li><li>M24</li><li>M30</li><li>M36</li><li>M42</li><li>M48</li><li>M56</li><li>M64</li></ul></li></ul></td>
+<td valign=top>Aliases:<br/><ul><li>fastener/iso7091</li></ul></td>
+</tr></table>
+
+### fastener/cheeseheadwasher-iso7092
+<table><tr>
+<td valign=top><img src="./fastener/cheeseheadwasher-iso7092.svg" width="200" height="200"></td>
+<td valign=top>Parameters:<br/><ul><li>size: <ul><li><b>M1</b></li><li>M1.2</li><li>M1.4</li><li>M1.6</li><li>M2</li><li>M2.5</li><li>M3</li><li>M3.5</li><li>M4</li><li>M5</li><li>M6</li><li>M8</li><li>M10</li><li>M12</li><li>M14</li><li>M16</li><li>M18</li><li>M20</li><li>M24</li><li>M30</li><li>M36</li></ul></li></ul></td>
+<td valign=top>Aliases:<br/><ul><li>fastener/iso7092</li></ul></td>
+</tr></table>
+
+### fastener/plainwasher-iso7093
+<table><tr>
+<td valign=top><img src="./fastener/plainwasher-iso7093.svg" width="200" height="200"></td>
+<td valign=top>Parameters:<br/><ul><li>size: <ul><li><b>M2.5</b></li><li>M3</li><li>M3.5</li><li>M4</li><li>M5</li><li>M6</li><li>M8</li><li>M10</li><li>M12</li><li>M14</li><li>M16</li><li>M18</li><li>M20</li><li>M24</li><li>M30</li><li>M36</li></ul></li></ul></td>
+<td valign=top>Aliases:<br/><ul><li>fastener/iso7093</li></ul></td>
+</tr></table>
+
+### fastener/plainwasher-iso7094
+<table><tr>
+<td valign=top><img src="./fastener/plainwasher-iso7094.svg" width="200" height="200"></td>
+<td valign=top>Parameters:<br/><ul><li>size: <ul><li><b>M5</b></li><li>M6</li><li>M8</li><li>M10</li><li>M12</li><li>M16</li><li>M20</li><li>M24</li><li>M30</li><li>M36</li></ul></li></ul></td>
+<td valign=top>Aliases:<br/><ul><li>fastener/iso7094</li></ul></td>
+</tr></table>
+
 *Generated by [PartCAD](https://partcad.org/)*

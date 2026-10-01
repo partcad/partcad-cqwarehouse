@@ -7,7 +7,7 @@ cover:
 docs:
   name: //pub/std/metric/cqwarehouse
 
-{% from 'macros.j2' import list_sizes, screw_params %}
+{% from 'macros.j2' import list_sizes, screw_params, nut_params, washer_params %}
 
 {%- set metric_sizes = {
   1: "M1-0.25",
@@ -252,6 +252,130 @@ parts:
     implements:
       "//pub/std/metric/m:m%size:value[1:value.index('-')]%-screw": [[0,0,0], [1,0,0], 0]
 
+  # Nuts. Each is built the way cq_warehouse builds it: on the XY plane, its
+  # bearing face at Z=0 and its axis along Z. So that is where the one port is,
+  # with Z pointing into the nut (the way it travels as it is put on), which is
+  # also the face to put a flange nut on with. A plain hex nut is the same seen
+  # from either side, so it needs no second one.
+  #
+  # A nut is a thread right through it, so it implements the threaded through
+  # hole a bolt mates with - and a cap nut, whose thread is blind, the tapped
+  # opening that one is.
+  fastener/hexnut-iso4032:
+    type: cadquery
+    aliases:
+      - fastener/iso4032
+    parameters:
+      {{ nut_params(metric_sizes, [1.6,2,2.5,3,3.5,4,5,6,8,10,12,14,16,18,20,22,24,27,30,33,36,39,42,45,48,52,56,60,64]) }}
+    implements:
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-threaded-thru": [[0,0,0], [1,0,0], 0]
+  fastener/hexnut-iso4033:
+    type: cadquery
+    aliases:
+      - fastener/iso4033
+    parameters:
+      {{ nut_params(metric_sizes, [5,6,8,10,12,14,16,20,24,30,36]) }}
+    implements:
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-threaded-thru": [[0,0,0], [1,0,0], 0]
+  fastener/hexnut-iso4035:
+    type: cadquery
+    aliases:
+      - fastener/iso4035
+    parameters:
+      {{ nut_params(metric_sizes, [1.6,2,2.5,3.5,4,5,6,8,10,12,14,16,18,20,22,24,27,30,33,36,39,42,45,48,52]) }}
+    implements:
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-threaded-thru": [[0,0,0], [1,0,0], 0]
+  fastener/hexnutunchamfered-iso4036:
+    type: cadquery
+    aliases:
+      - fastener/iso4036
+    parameters:
+      {{ nut_params(metric_sizes, [1.6,2,2.5,3,3.5,4,5,6,8,10]) }}
+    implements:
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-threaded-thru": [[0,0,0], [1,0,0], 0]
+  fastener/hexnutwithflange-din1665:
+    type: cadquery
+    # No 'fastener/din1665' alias: that one is the flange bolt's.
+    parameters:
+      {{ nut_params(metric_sizes, [5,6,8,10,12,14,16,20]) }}
+    implements:
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-threaded-thru": [[0,0,0], [1,0,0], 0]
+  fastener/domedcapnut-din1587:
+    type: cadquery
+    aliases:
+      - fastener/din1587
+    # Not M10: cq_warehouse 0.8.0 tabulates its height as 88 mm where DIN 1587
+    # says 8, and would build it that tall.
+    parameters:
+      {{ nut_params(metric_sizes, [4,5,6,8,12,14,16,18,20,22,24]) }}
+    implements:
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-tapped-opening": [[0,0,0], [1,0,0], 0]
+  fastener/squarenut-din557:
+    type: cadquery
+    aliases:
+      - fastener/din557
+    parameters:
+      {{ nut_params(metric_sizes, [5,6,8,10,12,16]) }}
+    implements:
+      "//pub/std/metric/m:m%size:value[1:value.index('-')]%-threaded-thru": [[0,0,0], [1,0,0], 0]
+
+  # Washers, on the XY plane in the same way, one face at Z=0. A washer's hole
+  # is a clearance hole - the screw passes through it - and it is the same from
+  # either face.
+  fastener/plainwasher-iso7089:
+    type: cadquery
+    aliases:
+      - fastener/iso7089
+    parameters:
+      {{ washer_params(metric_sizes, [1.6,2,2.5,3,3.5,4,5,6,8,10,12,14,16,18,20,22,24,27,30,33,36]) }}
+    implements:
+      "//pub/std/metric/m:m%size:value[1:]%-thru": [[0,0,0], [1,0,0], 0]
+  fastener/chamferedwasher-iso7090:
+    type: cadquery
+    aliases:
+      - fastener/iso7090
+    parameters:
+      {{ washer_params(metric_sizes, [5,6,8,10,12,14,16,18,20,22,24,27,30,33,36,39,42,45,48,52,56,60,64]) }}
+    implements:
+      "//pub/std/metric/m:m%size:value[1:]%-thru": [[0,0,0], [1,0,0], 0]
+  fastener/plainwasher-iso7091:
+    type: cadquery
+    aliases:
+      - fastener/iso7091
+    parameters:
+      {{ washer_params(metric_sizes, [1.6,2,2.5,3,4,5,6,8,10,12,16,20,24,30,36,42,48,56,64]) }}
+    implements:
+      "//pub/std/metric/m:m%size:value[1:]%-thru": [[0,0,0], [1,0,0], 0]
+  fastener/cheeseheadwasher-iso7092:
+    type: cadquery
+    aliases:
+      - fastener/iso7092
+    parameters:
+      {{ washer_params(metric_sizes, [1,1.2,1.4,1.6,2,2.5,3,3.5,4,5,6,8,10,12,14,16,18,20,24,30,36]) }}
+    implements:
+      "//pub/std/metric/m:m%size:value[1:]%-thru": [[0,0,0], [1,0,0], 0]
+  fastener/plainwasher-iso7093:
+    type: cadquery
+    aliases:
+      - fastener/iso7093
+    parameters:
+      {{ washer_params(metric_sizes, [2.5,3,3.5,4,5,6,8,10,12,14,16,18,20,24,30,36]) }}
+    implements:
+      "//pub/std/metric/m:m%size:value[1:]%-thru": [[0,0,0], [1,0,0], 0]
+  fastener/plainwasher-iso7094:
+    type: cadquery
+    aliases:
+      - fastener/iso7094
+    parameters:
+      {{ washer_params(metric_sizes, [5,6,8,10,12,16,20,24,30,36]) }}
+    implements:
+      "//pub/std/metric/m:m%size:value[1:]%-thru": [[0,0,0], [1,0,0], 0]
+
 render:
   svg:
+    # The exact hidden-line projection rather than the polygonal default: the
+    # drawings are checked in, which is what PartCAD's 'reproducible' is for,
+    # and the polygonal one drops the circular edges of a solid of revolution -
+    # a plain washer came out as its two silhouettes and nothing else.
+    reproducible: true
   readme: README_metric.md
