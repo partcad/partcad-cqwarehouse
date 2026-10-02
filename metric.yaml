@@ -323,10 +323,10 @@ parts:
     type: cadquery
     aliases:
       - fastener/din1587
-    # Not M10: cq_warehouse 0.8.0 tabulates its height as 88 mm where DIN 1587
-    # says 8, and would build it that tall.
+    # cq_warehouse 0.8.0 tabulates the M10's height as 88 mm where DIN 1587
+    # says 8; the script corrects it before building one.
     parameters:
-      {{ nut_params(metric_sizes, [4,5,6,8,12,14,16,18,20,22,24]) }}
+      {{ nut_params(metric_sizes, [4,5,6,8,10,12,14,16,18,20,22,24]) }}
     implements:
       "//pub/std/metric/m:m%size:value[1:value.index('-')]%-tapped-opening": [[0,0,0], [1,0,0], 0]
   fastener/squarenut-din557:

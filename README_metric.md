@@ -202,7 +202,7 @@ Metric parts by cq-warehouse
 ### fastener/domedcapnut-din1587
 <table><tr>
 <td valign=top><img src="./fastener/domedcapnut-din1587.svg" width="200" height="200"></td>
-<td valign=top>Parameters:<br/><ul><li>size: <ul><li><b>M4-0.7</b></li><li>M5-0.8</li><li>M6-1</li><li>M8-1.25</li><li>M12-1.75</li><li>M14-2</li><li>M16-2</li><li>M18-2.5</li><li>M20-2.5</li><li>M22-2.5</li><li>M24-3</li></ul></li><li>simple: False</li><li>hand: <ul><li>left</li><li><b>right</b></li></ul></li></ul></td>
+<td valign=top>Parameters:<br/><ul><li>size: <ul><li><b>M4-0.7</b></li><li>M5-0.8</li><li>M6-1</li><li>M8-1.25</li><li>M10-1.5</li><li>M12-1.75</li><li>M14-2</li><li>M16-2</li><li>M18-2.5</li><li>M20-2.5</li><li>M22-2.5</li><li>M24-3</li></ul></li><li>simple: False</li><li>hand: <ul><li>left</li><li><b>right</b></li></ul></li></ul></td>
 <td valign=top>Aliases:<br/><ul><li>fastener/din1587</li></ul></td>
 </tr></table>
 
