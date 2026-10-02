@@ -50,3 +50,36 @@
         enum: ["left","right"]
         default: right
 {%- endmacro -%}
+
+{#- A nut takes a thread, like a screw, and has no length. -#}
+{%- macro nut_params(all_sizes, available_sizes) -%}
+      size:
+        type: string
+        enum:
+          {{ list_sizes(all_sizes, available_sizes) | indent(10) }}
+        default: "{{ all_sizes[available_sizes[0]] }}"
+      simple:
+        type: bool
+        default: False
+      hand:
+        type: string
+        enum: ["left","right"]
+        default: right
+{%- endmacro -%}
+
+{#- A washer is named by the screw it takes, without a pitch: "M6". -#}
+{%- macro list_washer_sizes(all_sizes, available_sizes) -%}
+{%- for num in all_sizes -%}
+{%- if num in available_sizes -%}
+- "{{ all_sizes[num].split('-')[0] }}"
+{% endif -%}
+{%- endfor -%}
+{%- endmacro -%}
+
+{%- macro washer_params(all_sizes, available_sizes) -%}
+      size:
+        type: string
+        enum:
+          {{ list_washer_sizes(all_sizes, available_sizes) | indent(10) }}
+        default: "{{ all_sizes[available_sizes[0]].split('-')[0] }}"
+{%- endmacro -%}
